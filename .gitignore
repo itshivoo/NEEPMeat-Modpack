@@ -2,6 +2,8 @@
 !README.md
 !.gitignore
 !.gitattributes
+!templates
+!templates/**
 !config
 !config/carryon-common.json
 !config/gravestones.json
@@ -9,4 +11,8 @@
 !config/defaultoptions-common.toml
 
 # Scripts
-!pack-files.ps1
+!get-config-files.ps1
+!get-files.ps1
+!gen-archive-name.ps1
+!export-mrpack.ps1
+!export-tlauncher.ps1

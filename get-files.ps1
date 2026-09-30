@@ -23,32 +23,8 @@ foreach ($name in gci -path "resourcepacks" -filter "*§*" -name) {
     }
 }
 
+$configs = &"./get-config-files.ps1"
 $mods = gci -path "mods" | % { "mods/$($_.Name)" }
 $resoucepacks = gci -path "resourcepacks" | % { "resourcepacks/$($_.Name)" }
 
-$files = $mods + $resoucepacks
-
-# Files in git
-foreach ($path in git ls-files -cmo --exclude-standard) {
-    if ($path -eq ".gitignore") { continue }
-    if ($path -eq ".gitattributes") { continue }
-    if ($path -eq "pack-files.ps1") { continue }
-
-    $files += $path
-}
-
-$archive_name = "NEEPMeat-Modpack"
-$commit_hash = git rev-parse --short HEAD
-
-# Append latest commit hash to archive name
-if ($LASTEXITCODE -eq 0) {
-    $archive_name += "_commit-${commit_hash}"
-} else { $archive_name += "_dev" }
-
-# Append minecraft version to archive name
-$archive_name += "_mc-1.20.1"
-
-# Remove old archive
-if (test-path -path "$archive_name.zip") { ri -path "$archive_name.zip" }
-
-7z.exe a -tzip "$archive_name.zip" $files
+return $configs + $mods + $resoucepacks
