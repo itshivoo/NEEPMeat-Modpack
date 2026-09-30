@@ -15,7 +15,7 @@ foreach ($name in gci -path "resourcepacks" -filter "*§*" -name) {
     $valid_name = $name -replace "§[a-z0-9]{1}", ""
 
     try {
-        rni -path $path -newname $valid_name -erroraction stop
+        rni -literalpath $path -newname $valid_name -erroraction stop
     } catch {
         # Remove file with invalid name, since
         # the file with valid name is present
