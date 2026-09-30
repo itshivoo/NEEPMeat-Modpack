@@ -1,0 +1,11 @@
+*
+!.gitignore
+!.gitattributes
+!config
+!config/carryon-common.json
+!config/gravestones.json
+!config/entityculling.json
+!config/defaultoptions-common.toml
+
+# Scripts
+!pack-files.ps1

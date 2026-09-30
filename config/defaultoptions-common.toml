@@ -1,0 +1,13 @@
+
+# The default difficulty selected for newly created worlds.
+defaultDifficulty = "NORMAL"
+
+# Resource pack IDs to have enabled by default on the first run.
+defaultResourcePacks = [
+    "file/Default-Dark-Mode-1.20-2023.7.0.zip",
+    "file/Default Dark Create 1.20.1.zip",
+    "file/Torches-Reimagined_[v1.8].zip"
+ ]
+
+# Set to true if the difficulty for new world's should be locked to the specific default. This cannot be unlocked by players without external tools! Probably a bad idea. I don't recommend. Why am I adding this option?
+lockDifficulty = false
