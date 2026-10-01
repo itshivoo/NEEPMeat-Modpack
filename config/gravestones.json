@@ -10,7 +10,7 @@
   "decay_time_type": "TICKS",
   "damage_to_break": 3,
   "aesthetic_decay": false,
-  "store_experience": false,
+  "store_experience": true,
   "experience_cap": false,
   "experience_kept": "ALL",
   "experience_decay": false,
