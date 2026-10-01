@@ -9,6 +9,8 @@
 !config/gravestones.json
 !config/entityculling.json
 !config/defaultoptions-common.toml
+!config/defaultoptions
+!config/defaultoptions/keybindings.txt
 
 # Scripts
 !get-config-files.ps1
