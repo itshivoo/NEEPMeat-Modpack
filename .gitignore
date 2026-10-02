@@ -13,8 +13,7 @@
 !config/defaultoptions/keybindings.txt
 
 # Scripts
-!get-config-files.ps1
-!get-files.ps1
+!copy-assets.ps1
 !gen-archive-name.ps1
 !export-mrpack.ps1
 !export-tlauncher.ps1
