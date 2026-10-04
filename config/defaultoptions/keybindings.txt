@@ -1,1 +1,11 @@
 key_key.amecs.toggle_auto_jump:key.keyboard.unknown:NONE
+
+key_gui.xaero_minimap_settings:key.keyboard.unknown:NONE
+key_gui.xaero_enlarge_map:key.keyboard.equal:NONE
+
+key_zume.zoom_in:key.keyboard.unknown:NONE
+key_zume.zoom_out:key.keyboard.unknown:NONE
+
+key_iris.keybind.reload:key.keyboard.k:NONE
+key_iris.keybind.toggleShaders:key.keyboard.unknown:NONE
+key_iris.keybind.shaderPackSelection:key.keyboard.unknown:NONE
