@@ -1,19 +1,13 @@
-*
-!README.md
-!.gitignore
-!.gitattributes
-!templates
-!templates/**
-!config
+config/**
 !config/carryon-common.json
 !config/gravestones.json
 !config/entityculling.json
 !config/defaultoptions-common.toml
-!config/defaultoptions
+!config/defaultoptions/
 !config/defaultoptions/keybindings.txt
 
-# Scripts
-!copy-assets.ps1
-!gen-archive-name.ps1
-!export-mrpack.ps1
-!export-tlauncher.ps1
+mods/**
+!mods/.gitkeep
+
+resourcepacks/**
+!resourcepacks/.gitkeep
