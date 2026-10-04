@@ -1,3 +1,9 @@
+<div style="display: flex">
+  <img src="badges/fabric.png" height="48px" alt="Fabric">
+  <img src="badges/create.png" height="48px" alt="Create">
+  <img src="badges/neepmeat.png" height="48px" alt="NEEPMeat">
+</div>
+
 <details>
   <summary><b>Mod List</b></summary>
 
