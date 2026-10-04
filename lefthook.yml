@@ -1,0 +1,7 @@
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      glob: "templates/mrpack/modrinth.index.json"
+      run: biome check --fix {staged_files}
+      stage_fixed: true
