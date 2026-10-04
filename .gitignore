@@ -11,3 +11,5 @@ mods/**
 
 resourcepacks/**
 !resourcepacks/.gitkeep
+
+dist/

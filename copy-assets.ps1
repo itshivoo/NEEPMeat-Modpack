@@ -45,11 +45,14 @@ if ($duplicate_types) {
     exit
 }
 
-if (Test-Path "$OutDir") { Remove-Item -Recurse -Force "$OutDir" }
-
-New-Item -Type Directory -Force "$OutDir" > $null
+if (Test-Path -Path "$OutDir") {
+    throw "Output directory '$OutDir' already exists"
+    exit
+}
 
 $files = @()
+
+New-Item -Type Directory -Force "$OutDir" > $null
 
 foreach ($option in $Type) {
     if (-not (Test-AssetType $option)) {
@@ -76,6 +79,8 @@ foreach ($option in $Type) {
             New-Item -Type Directory "$OutDir/$dir" > $null
 
             foreach ($path in $paths) {
+                if ($path -match ".gitkeep") { continue }
+
                 Copy-Item -LiteralPath "$path" -Destination "$OutDir/$path"
 
                 $files += "$OutDir/$path"

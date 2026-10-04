@@ -8,4 +8,6 @@ foreach ($name in $templates) {
     Copy-Item -LiteralPath "$templates_dir/$name" -Destination "tmp/$name"
 }
 
-7z a -tzip "$archive_name.mrpack" "./tmp/*"
+7z a -tzip "dist/$archive_name.mrpack" "./tmp/*"
+
+Remove-Item -Recurse -Force "tmp"
